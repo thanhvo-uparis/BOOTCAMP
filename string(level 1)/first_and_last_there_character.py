@@ -6,6 +6,7 @@
 # "Amazing" -> "Amaing"
 
 s = "codingame"
+
 # len = 9
 
 def first_and_last(myString):
@@ -36,4 +37,23 @@ def first_and_last(myString):
 # s2 = "".join("test programme")
 # print(s2)
 
-first_and_last("hello1p")
+# first_and_last("hello1p")
+
+
+#* ************************************************************************** */
+#*                              Correction                                    */
+#* ex1: print(s[:30])
+#*                                                                            */
+#*                                                                            */
+#*                                                                            */                                                                        */
+#* ************************************************************************** */
+
+def correction(myString):
+    if len(myString) < 6:
+        print("")
+    else:
+        new_string = ""
+        new_string += myString[:3] + myString[(len(myString) -3):]
+        print(new_string)
+
+correction(s)
